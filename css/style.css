@@ -89,16 +89,44 @@ header .navbar{
   background-color: blue;
 }
 
-
-
-
-
+/* sezione customers */
 #customers{
   background-color: #F3F5F9;
 }
+#customers p, #stories{
+  margin: 20px auto;
+}
+
+/* sezione deploy and scale */
 #deploy{
   background-color: #FFFFFF;
 }
+#deploy h2{
+  margin-top: 50px;
+}
+#deploy p{
+  margin-bottom: 50px;
+}
+#deploy .list-group-item{
+  background-color: white;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  margin-bottom: 0;
+}
+#deploy .list-group{
+  margin-left: 60px;
+}
+.innest{
+  text-align: left;
+  padding-right: 80px;
+}
+.innest h6{
+  font-size: 20px;
+}
+
+
+
 #designed{
   background-color: #F3F5F9;
 }
@@ -129,12 +157,29 @@ header .navbar{
   #navigation .navbar-brand{
     padding: 0 0 0 20px;
   }
+  /* header */
   .titolohp{
     margin: 0;
   }
+  /* sezione deploy menu innestato */
+  #deploy .list-group{
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  #deploy p{
+    margin-bottom: 20px;
+  }
+  .innest{
+    padding-right: 0;
+  }
 }
 @media all and (min-width: 769px) and (max-width: 1200px){
+  /* header */
   .titolohp{
     margin: 0;
+  }
+  /* sezione menu innestato */
+  .innest{
+    padding-right: 5%;
   }
 }
