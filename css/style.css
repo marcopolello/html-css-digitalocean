@@ -126,13 +126,34 @@ header .navbar{
 }
 
 
-
+/* sezione designed con carousel */
 #designed{
   background-color: #F3F5F9;
 }
+#designed img{
+  width: 500px;
+  height: auto;
+}
+#designed h2{
+  margin: 50px auto 10px;
+}
+#designed p{
+  margin: 0 auto 50px;
+}
+
+
+/* sezione features SONO ARRIVATO QUI */
 #features{
   background-color: #FFFFFF;
 }
+
+
+
+
+
+
+
+
 #service{
   background-color: #0F2656;
 }
