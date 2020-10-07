@@ -32,18 +32,67 @@
 }
 
 /* nav */
-nav{
-  background-color: white;
-}
 #navigation{
   padding: 1%;
 }
+header .navbar{
+  margin-bottom: 0;
+  /* position: fixed; */
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#navigation img{
+  max-height: 40px;
+  width: auto;
+}
+#navigation .navbar-brand{
+  padding: 0 80px;
+}
+
 
 
 /* sezione jumbotron */
 #jumbotron{
-  background-color: #2C3E50;
+  background-image: url(../img/home.jpg);
+  margin-top: 76.94px;
 }
+.titolohp{
+  margin: 200px 30px 200px 0;
+}
+.titolohp h1{
+  font-size: 58px;
+  color: white;
+}
+.titolohp p{
+  font-size: 24px;
+  color: white;
+}
+.square{
+  margin: 30px auto;
+  width: 90%;
+  background-color: white;
+  border-radius: 5%;
+  padding: 30px 0;
+  /* debug */
+  /* min-height: 300px; */
+  /* debug */
+}
+.square .form-control{
+  display: inline;
+  width: 50%;
+}
+.square .btn{
+  padding: 6px 50px;
+  color: white;
+  background-color: blue;
+}
+
+
+
+
+
 #customers{
   background-color: #F3F5F9;
 }
@@ -77,7 +126,15 @@ nav{
   .ms_container1{
     padding: 0 8%;
   }
+  #navigation .navbar-brand{
+    padding: 0 0 0 20px;
+  }
+  .titolohp{
+    margin: 0;
+  }
 }
 @media all and (min-width: 769px) and (max-width: 1200px){
-
+  .titolohp{
+    margin: 0;
+  }
 }
