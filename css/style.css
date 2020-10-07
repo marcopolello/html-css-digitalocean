@@ -25,16 +25,21 @@
   padding: 0 10%;
 }
 .ms_container1{
-  padding: 0 20%;
-}
-.ms_container2{
   padding: 0 15%;
 }
+.ms_container2{
+  padding: 0 20%;
+}
 
-/* sfondo nav */
+/* nav */
 nav{
   background-color: white;
 }
+#navigation{
+  padding: 1%;
+}
+
+
 /* sezione jumbotron */
 #jumbotron{
   background-color: #2C3E50;
@@ -70,7 +75,7 @@ nav{
     padding: 0 5%;
   }
   .ms_container1{
-    padding: 0 10%;
+    padding: 0 8%;
   }
 }
 @media all and (min-width: 769px) and (max-width: 1200px){
