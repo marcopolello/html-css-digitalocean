@@ -134,7 +134,6 @@ header .navbar{
   background-color: #F3F5F9;
 }
 #designed img{
-  width: 500px;
   height: auto;
   margin: 10px;
   padding: 20px;
@@ -151,19 +150,27 @@ header .navbar{
 #features{
   background-color: #FFFFFF;
 }
-#features [class*="col-xs-12 col-md-4 col-lg-4"]{
+.feat{
+  margin: 40px auto;
   text-align: left;
 }
 
 
 
 
-
-
-
+/* sezione business (tabella) */
 #service{
   background-color: #0F2656;
 }
+#service h2{
+  margin: 40px auto 0;
+}
+
+
+
+
+
+
 #development{
   background-color: #F3F5F9;
 }
