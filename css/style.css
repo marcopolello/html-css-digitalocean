@@ -117,6 +117,9 @@ header .navbar{
 #deploy .list-group{
   margin-left: 60px;
 }
+#deploy button.list-group-item{
+  width: 50%;
+}
 .innest{
   text-align: left;
   padding-right: 80px;
@@ -133,6 +136,8 @@ header .navbar{
 #designed img{
   width: 500px;
   height: auto;
+  margin: 10px;
+  padding: 20px;
 }
 #designed h2{
   margin: 50px auto 10px;
@@ -142,11 +147,13 @@ header .navbar{
 }
 
 
-/* sezione features SONO ARRIVATO QUI */
+/* sezione features */
 #features{
   background-color: #FFFFFF;
 }
-
+#features [class*="col-xs-12 col-md-4 col-lg-4"]{
+  text-align: left;
+}
 
 
 
