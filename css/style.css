@@ -7,17 +7,17 @@
 
 
 /* regole di debug */
-[class*="col-"] {
+/* [class*="col-"] {
   min-height: 100px;
   background-color: lightgreen;
   border: solid 1px black;
   text-align: center;
-}
+} */
 /* .row .col-6 div  */
-[class*="col-"] > .row > [class*="col-"]{
+/* [class*="col-"] > .row > [class*="col-"]{
   background-color: salmon;
   border-color: #fff;
-}
+} */
 
 /* regole centratura pagina */
 
@@ -34,10 +34,11 @@
 /* nav */
 #navigation{
   padding: 1%;
+  background-color: white;
 }
 header .navbar{
   margin-bottom: 0;
-  /* position: fixed; */
+  position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
@@ -50,7 +51,9 @@ header .navbar{
 #navigation .navbar-brand{
   padding: 0 80px;
 }
-
+.navbar-right{
+  margin-right: 30px;
+}
 
 
 /* sezione jumbotron */
@@ -71,7 +74,7 @@ header .navbar{
 }
 .square{
   margin: 200px auto 50px;
-  width: 90%;
+  width: 100%;
   background-color: white;
   border-radius: 5%;
   padding: 30px 0;
@@ -161,11 +164,14 @@ header .navbar{
 /* sezione business (tabella) */
 #service{
   background-color: #0F2656;
+  color: white;
 }
 #service h2{
-  margin: 40px auto 0;
+  margin: 40px auto 10px;
 }
-
+#service a{
+  color: #0061FF;
+}
 
 
 
@@ -180,20 +186,59 @@ header .navbar{
   padding: 20px;
 }
 #development h2{
-  margin: 50px auto 10px;
-}
-#development p{
-  margin: 0 auto 50px;
+  margin: 50px auto 20px;
 }
 
 
-
+/* sezione start */
 #start{
   background-color: #0061FF;
 }
+#start h2{
+  color: white;
+  margin: 20px auto 10px;
+}
+#start button{
+  background-color: white;
+  color:blue;
+  margin: 0px auto 20px;
+}
+
+
+/* sezine footer */
 #foot{
   background-color: #2C3E50;
+  color: lightgray;
 }
+#foot img{
+  display: block;
+  margin: 20px 0 5px;
+}
+#foot ul{
+  padding: 0;
+}
+#foot ul > .social{
+  display: inline-block;
+  margin-right: 5px;
+}
+a > i{
+  font-size: 20px;
+}
+ul{
+  list-style-type: none;
+}
+.footlist{
+  padding: 20px;
+}
+.footlist > ul >li:first-child{
+  font-size: 20px;
+}
+#foot a{
+  color: white;
+  text-decoration: none;
+}
+
+
 
 /* REGOLE MEDIA QUERIES PARTICOLARI */
 @media all and (max-width: 768px){
@@ -203,12 +248,18 @@ header .navbar{
   .ms_container1{
     padding: 0 8%;
   }
+  /* header */
   #navigation .navbar-brand{
     padding: 0 0 0 20px;
   }
-  /* header */
+  #jumbotron{
+    margin-top: 60px;
+  }
   .titolohp{
     margin: 0;
+  }
+  .square{
+    margin: 20px 0;
   }
   /* sezione deploy menu innestato */
   #deploy .list-group{
@@ -224,8 +275,15 @@ header .navbar{
 }
 @media all and (min-width: 769px) and (max-width: 1200px){
   /* header */
+  #jumbotron{
+    margin-top: 66px;
+  }
   .titolohp{
-    margin: 0;
+    margin: 0 10px 0 0;
+    text-align: left;
+  }
+  .square{
+    margin: 20px 0;
   }
   /* sezione menu innestato */
   .innest{
